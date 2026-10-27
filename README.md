@@ -9,11 +9,16 @@ Given a short, informal description of a feature or bug, this assistant:
 
 Retrieval is plain keyword overlap against a CSV export of historical Jira tickets — no embeddings or vector DB involved.
 
+**Try it live:** [kigobe.net/projects/jira-assistant](https://kigobe.net/projects/jira-assistant) · [Hugging Face Space](https://huggingface.co/spaces/rkigobe/jira-assistant)
+
 ## Contents
 
 - `jira_rag.ipynb` — the notebook containing the full pipeline and a Gradio chat UI
+- `rag.py` — the pipeline extracted from the notebook, shared with the evaluation harness
+- `evaluator.py`, `evaluation/` — retrieval/answer evaluation harness and test set
 - `jira_fictitious_data.csv` — synthetic Jira export (50 tickets) used as the knowledge base
 - `jira_rag_share.html` — a rendered/exported copy of the notebook for viewing without Jupyter
+- `space/` — the public web app deployed to Hugging Face (Claude Haiku, per-visitor limits, optional upload of your own Jira export up to 5,000 issues). See [space/README.md](space/README.md); deploy with `space/deploy.sh`.
 
 ## Setup
 
