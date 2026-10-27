@@ -36,3 +36,7 @@ jupyter lab jira_rag.ipynb
 ```
 
 Run all cells. The last cell launches a local Gradio web UI (opens in your browser at `http://127.0.0.1:7860`) titled "Jira Assistant" — describe a feature or bug and get back a drafted ticket, technical design, and probable implementation.
+
+## License
+
+[MIT](LICENSE) © 2026 Robert Kigobe. Issues and pull requests are welcome.
